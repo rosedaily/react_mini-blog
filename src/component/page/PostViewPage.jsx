@@ -73,7 +73,7 @@ function PostViewPage(props){
         </PostContainer>
 
         <CommentLabel>댓글</CommentLabel>
-        <CommentList comments={props.comments}/>
+        <CommentList comments={post.comments}/>
 
         <TextInput
           height={40}

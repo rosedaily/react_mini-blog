@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width : calc( 100% - 32px );
   display : flex;
   flex-direction : column;
-  align-items : flex-start;
+  align-items : center;
   justify-content : center;
 `;
 
@@ -26,8 +26,6 @@ const Container = styled.div`
 `;
 
 function MainPage(props){
-  const {} = props;
-
   const navigator = useNavigate();
 
   return(
@@ -41,7 +39,7 @@ function MainPage(props){
         />
         
         <PostList
-          post={data}
+          posts={data}
           onClickItem={(item) => {
             navigator(`/post/${item.id}`);
           }}

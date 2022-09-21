@@ -4,7 +4,7 @@ import CommentListItem from './CommentListItem';
 
 const Wrapper = styled.div`
   display : flex;
-  flex-dirextion : column;
+  flex-direction : column;
   align-items : flex-start;
   justify-content : center;
 
@@ -21,9 +21,7 @@ function CommentList(props){
   return (
     <Wrapper>
       {comments.map((comment, index) => {
-        return (
-          <CommentListItem key={comment.id} comment={comment} />
-        );
+        return <CommentListItem key={comment.id} comment={comment} />;
       })}
     </Wrapper> 
   )
